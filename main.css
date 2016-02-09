@@ -1,18 +1,17 @@
 
-#main{
-    
+#main
+{
     float:left;
     padding:10px;
-     border-right:1px solid;
+    border-right:1px solid;
 }
-#local{
-    
-    float:left;
-    padding:10px;
-    
-    
-}
-.none{
+.none
+{
     text-decoration:none;
 }
+#local{
+    float:left;
+    padding:10px;
+}
+
 
