@@ -6,6 +6,10 @@
     border-right: 1px solid;
     text-align:right;
     width:250px; 
+    
+}
+.new{
+    margin-right:25px;
 }
 .none
 {
@@ -17,7 +21,8 @@
 {
     float: left;
     padding: 10px;
-   text-align:center;
 }
-
-
+h1{
+    color:blue;
+}
+    
