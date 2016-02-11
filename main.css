@@ -16,7 +16,8 @@
     text-decoration: none;
     font-weight: bold;
     border: 1px solid blue;
-    background-color:yellow;
+    background-color: yellow;
+    padding: 10px;
 }
 
 #local
