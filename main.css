@@ -1,24 +1,20 @@
 #main
 {
-    
+    background-color:black;
     float: left;
     padding: 10px;
     border-right: 1px solid;
     text-align:right;
     width:250px; 
-    
+    color:white;
 }
 .new{
     margin-right:25px;
 }
 .none
 {
-    color:white;
     text-decoration: none;
     font-weight: bold;
-    border: 1px solid blue;
-    background-color: blue;
-    padding: 2px;
 }
 
 #local
@@ -29,4 +25,3 @@
 h1{
     color:blue;
 }
-    
