@@ -8,6 +8,7 @@ html, body { height: 100%; }
     text-align:right;
     width:250px; 
     color:white;
+    height: 100%;
 }
 .new{
     margin-right:25px;
