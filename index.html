@@ -2,12 +2,12 @@
 <html lang="en-us">
 <head>
 <style>
-.body{	background-color:none;}
-.pink{	background-color:pink;}
-.yellow{	background-color:yellow;}
-.blue{	background-color:blue;}
-.red{	background-color:red;}
-.green{	background-color:green;}
+.body{background-color:none;}
+.pink{background-color:pink;}
+.yellow{background-color:yellow;}
+.blue{background-color:blue;}
+.red{background-color:red;}
+.green{background-color:green;}
 </style>
 <title>Pankaj Suthar ( Asdev )</title>
 <link rel="stylesheet" href="pankajas.github.io/main.css" type="text/css">
@@ -27,19 +27,19 @@
 </div>
 
 <form class="form">
-<fieldset id="field">
-<legend>Contact</legend>
-Name<br>
-<input type="text" value="">
-<br><br>
-Email<br>
-<input type="text" value="">
-<br><br>
-Message<br>
-<textarea name="Message" row="10" cols="30" ></textarea>
-<br>
-<input type="submit" value="Send" onclick="alert('Sorry!!! we are updating soon..')">
-</fieldset>
+	<fieldset id="field">
+		<legend>Contact</legend>
+		Name<br>
+		<input type="text" value="">
+		<br><br>
+		Email<br>
+		<input type="text" value="">
+		<br><br>
+		Message<br>
+		<textarea name="Message" row="10" cols="30" ></textarea>
+		<br>
+		<input type="submit" value="Send" onclick="alert('Sorry!!! we are updating soon..')">
+	</fieldset>
 </form>
 <form name="form1" onclick="slct()" >
 Select Background Color	<select name="name">
@@ -53,7 +53,7 @@ Select Background Color	<select name="name">
 </form>
 <script>
 function slct(){
-	a = document.form1.name.value;
+	var a = document.form1.name.value;
 		switch(a.toUpperCase())
 	{
 		case 'YELLOW':
