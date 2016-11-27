@@ -137,26 +137,7 @@ function theme_option(selector) {
   return false;
 }
 
-function init_gmap() {
-  $('.map-area #map').remove();
-  $('.map-area').append('<div id="map"></div>');
-  setTimeout(function() {
-    $('#map').gmap3({
-      action: 'init',
-      marker: {
-        address: "Haltern am See, Weseler Str. 151",
-        options: {
-          icon: new google.maps.MarkerImage("./assets/images/marker.png")
-        }
-      },
-      map: {
-        options: {
-          zoom: 14
-        }
-      }
-    });
-  }, 2000);
-}
+
 
 $(window).load(function() {
   $('.imgWrapper img').animate({opacity: '1.0'}, 1000, function() {
