@@ -1,82 +1,338 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-<style>
-.body{background-color:none;}
-.pink{background-color:pink;}
-.yellow{background-color:yellow;}
-.blue{background-color:blue;}
-.red{background-color:red;}
-.green{background-color:green;}
-</style>
-<title>Pankaj Suthar ( Asdev )</title>
-<link rel="shortcut icon" type="image/png" href="http://icons.iconarchive.com/icons/iconarchive/red-orb-alphabet/256/Letter-P-icon.png" />
-<link rel="stylesheet" href="pankajas.github.io/main.css" type="text/css">
-</head>
-<body>
-<div id="main">
-<img class="new" src="https://raw.githubusercontent.com/PankajAS/pankajas.github.io/master/Untitled1.1.jpg" alt="Pankaj" width="240px" height="270px"></img>
-<h1 class="new">Pankaj Suthar</h1>
-<p>I'm studying at MSc(final).</p>
-<p>Skills : HTML, CSS, C, C++ and Data Entry;</p>
-<br>
-<a class="none" href="mailto:sutharpankaj91@gmail.com">Contact</a><hr>
-<a class="none" href="https://web.facebook.com/pankaj.suthar.3979" target="blank">Facebook</a>
-<a class="none" href="https://twitter.com/SutharCom" target="blank">Twitter</a>
-<a class="none" href="https://www.linkedin.com/in/pankaj-suthar-74a955113?" target="blank">Linkedin</a>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
+<html>
+  <head>
+    <title>Pankaj Aasdev</title>
+    <!-- Bootstrap -->
+    <link href="http://yobithemes.com/wb/html/dcard/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://pankajas.github.io/css/style.css" rel="stylesheet">   
+    <link rel="shortcut icon" href="http://icons.iconarchive.com/icons/iconarchive/red-orb-alphabet/256/Letter-P-icon.png">
+   
+  </head>
+  <body>
 
-<form class="form">
-	<fieldset id="field">
-		<legend>Contact</legend>
-		Name<br>
-		<input type="text" value="">
-		<br><br>
-		Email<br>
-		<input type="text" value="">
-		<br><br>
-		Message<br>
-		<textarea name="Message" row="10" cols="30" ></textarea>
-		<br>
-		<input type="submit" value="Send" onclick="alert('Sorry!!! we are updating soon..')">
-	</fieldset>
-</form>
-<form name="form1" onclick="slct()" >
-Select Background Color	<select name="name">
-		<option></option>
-		<option>YELLOW</option>
-		<option>RED</option>
-		<option>BLUE</option>
-		<option>PINK</option>
-		<option>GREEN</option>
-	</select>
-</form>
-<script>
-function slct(){
-	var a = document.form1.name.value;
-		switch(a.toUpperCase())
-		       {
-		case 'YELLOW':
-			document.getElementsByTagName("body")[0].setAttribute("class","yellow");
-			break;
-		case 'RED':
-			document.getElementsByTagName("body")[0].setAttribute("class","red");
-			break;
-		case 'BLUE':
-			document.getElementsByTagName("body")[0].setAttribute("class","blue");
-			break;
-		case 'PINK':
-			document.getElementsByTagName("body")[0].setAttribute("class","pink");
-			break;
-		case 'GREEN':
-			document.getElementsByTagName("body")[0].setAttribute("class","green");
-			break;
-		default:
-       			document.getElementsByTagName("body")[0].setAttribute("class","body");
-			break;
-	}
-};
-</script>
-</body>
+    <div id="wrapper">
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+
+            <header class="portrait">
+              <div class="bg-line"></div>
+              <div class="body-portrait">
+
+                <div class="box-note">
+                  <div id="slider-note" class="carousel slide" data-ride="carousel" data-interval="10000">
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        A little knowledge that acts is worth infinitely 
+                        more than much knowledge that is idle
+                      </div>
+                      <div class="item">
+                        Iam available for freelance, if you need my services please
+                        send me an email :)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="portrait-img-area">
+                  <img src="https://raw.githubusercontent.com/PankajAS/pankajas.github.io/master/Untitled1.1.jpg" height="200px" alt="avatar" class="avatar"/>
+                  <div class="profile-links">
+                    <a href="http://wwww.facebook.com/pankajsthr" class="facebook"  data-toggle="tooltip" data-placement="left" title="Facebook"><i>F</i></a>
+                    <a href="http://www.twitter.com/pankajsthr" class="twitter"  data-toggle="tooltip" data-placement="right" title="Twitter"><i>T</i></a>
+                  </div>
+                </div>
+               
+                <h1 class="name">Pankaj Suthar <small>freelance web developer</small></h1>
+                <img src="http://yobithemes.com/wb/html/dcard/assets/images/arrow-down.png" alt="" class="img-arrow">
+                <a href="javascript:void(0)" class="btn btn-flat " id="open-content">About Me</a>
+                <img src="http://yobithemes.com/wb/html/dcard/assets/images/arrow-down.png" alt="" class="img-arrow">
+               
+              </div>
+            </header>
+          
+            <section class="content" id="main-content">
+
+              <nav id='navigation'>
+                <ul class="navigation-list clearfix list-unstyled">
+                  <li class="active"><a href="#about" data-toggle="tab" data-menu="about"><span>About Me</span></a></li>
+                  <li><a href="#resume" data-toggle="tab" data-menu="resume"><span>Resume</span></a></li>
+                  <li><a href="#portfolio" data-toggle="tab" data-menu="portfolio"> <span>Portfolio</span></a></li>
+                  <li><a href="#blog" data-toggle="tab" data-menu="blog"><span >Blog</span></a></li>
+                  <li><a href="#contact" data-toggle="tab" data-menu="contact"><span>Contact</span></a></li>
+                </ul>
+              </nav>
+              <div class="tab-content">
+
+                <div id='about' class="tab-pane  fade in  active">
+                  <div class="body-content">
+                    <div class="row">
+                      <div class="col-md-3 text-center">
+                        <img src="https://raw.githubusercontent.com/PankajAS/pankajas.github.io/master/1521556_387756451369647_292539784_n.jpg" alt="avatar" class="img-responsive img-profile">
+                      </div>
+                      <div class="col-md-9">
+                        <div class="mini-desc">
+                          <h2 class="title">Hello, my name is Pankaj Aasdev!</h2>
+                          <p>Hi my name is Pankaj Aasdev, I'm web developer and android app developer. I studied in Msc(computer science).</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="deviter"></div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="title"> Indentity</h3>
+                        <div class="identity-area">
+                          <div class="row">
+                            <div class="col-sm-4"><label>Fullname</label></div>
+                            <div class="col-sm-8"> Pankaj Aasdev</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Date of birth</label></div>
+                            <div class="col-sm-8"> September 22, 1994</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Address</label></div>
+                            <div class="col-sm-8"> Suragtarh, Raj 335804, IN</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Phone</label></div>
+                            <div class="col-sm-8"> +919602552282</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Email</label></div>
+                            <div class="col-sm-8"> pankajaasdev@gmail.com</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Skype</label></div>
+                            <div class="col-sm-8"> pankaj.suthar6</div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-4"><label>Website</label></div>
+                            <div class="col-sm-8"> <a target="_blank" href="https://pankajas.github.io">Pankaj</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="title">Services</h3>
+                        <div class="box-block">
+                          <ul class="list-unstyled list-strip">
+                            <li> Development in angularjs</li>
+                            <li> Create Android Apps</li>
+                            <li> Create Templates in HTML5</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="deviter"></div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="title"> Client</h3>
+                        
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="title"> Testimonial</h3>
+                        <div class="box-block">
+                          <div id='testimonial-slider' class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                
+                              </div>
+                              <div class="item ">
+                               
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id='resume' class="tab-pane fade">
+                  <div class="body-content">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <h3 class="title">Work History</h3>
+                        <div class="box-block">
+                          <div class="time-line">                     
+                          
+                          
+                          </div>
+                        </div>
+                        <div class="deviter"></div>
+                        <h3 class="title">Education History</h3>
+                        <div class="box-block">
+                          <div class="time-line">                        
+                       
+                           
+                          </div>
+                        </div>
+                 
+                      </div>
+                      <div class="col-md-4">
+                        <h3 class="title"> Programming Skills</h3>
+                        <div class="box-block">
+
+                          <ul class="list-unstyled list-skills">
+                            <li>
+                              <span class="caption-skill">Angularjs</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 90%;">
+                                  <span>90% </span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">Java</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 80%;">
+                                  <span>80% </span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">HTML</span>
+                              <div class="progress">
+                                <div class="progress-bar" style="width: 95%;">
+                                  <span>95% </span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <span class="caption-skill">Jquery</span>
+                              <div class="progress">
+                                <div class="progress-bar"  style="width: 85%;">
+                                  <span>85% </span>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                       
+
+                        </div>
+                        
+                        <div class="deviter"></div>
+                        <h3 class="title"> Language Skills</h3>
+                        <div class="box-block">
+                          <ul class="list-unstyled list-strip">
+                            <li>English</li>
+                            <li> Hindi</li>
+                          </ul>
+                        </div>
+                        <div class="deviter"></div>
+                        <h3 class="title"> Download Cv</h3>
+                        <div class="box-block">
+                          <p>You can download my CV in pdf format if you like. I love what i do.</p>
+                          <a href="#" class="btn btn-flat btn-block"> Download</a>
+                          <div class="text-center">Or</div>
+                          <a href="#" class="btn btn-flat btn-block style2"> Print</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              
+                <div id='portfolio' class="tab-pane fade">
+                  <div class="body-content">
+                    <h3 class="title"> My Works</h3>
+
+                    <div class="text-center">
+                      <ul class="control-profolio list-inline">
+                        <li class="filter active" data-filter="all">All</li>
+                        <li class="filter" data-filter="webdesign">Web Development</li>
+                        <li class="filter" data-filter="mobileapp">MobileApp</li>
+                      </ul>
+                    </div>
+                  
+                  </div>
+                </div>
+              
+                <div id='blog' class="tab-pane fade">
+                  <div class="body-content">
+                    <h2 class="title">Share Everything With Love</h2>                      
+                    
+                    
+                  </div>
+                </div>
+                <div id='contact' class="tab-pane fade">
+                  <div class="body-content">
+                    <h3 class="title">Get In Touch</h3>
+                                   
+                      <div class="info-map">
+                        <h3>Contact Info</h3>
+                        <ul class="list-unstyled list-info">
+                          <li> Suratgarh, Raj, 335804.</li>
+                          <li> +919602552282</li>
+                          <li><a href="#">fb link</a></li>
+                          <li><a href="#">twitter link </a></li>
+                          <li><a href="#">linkedin link</a></li>
+                        </ul>
+                      </div>
+                    
+                    <div class="deviter"></div>
+                    <br/>
+                  
+                    <form >
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="FullnameForm">Fullname</label>
+                            <input type="text" class="form-control" id="FullnameForm" placeholder="Enter Fullname">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="CompanyForm">Company</label>
+                            <input type="text" class="form-control" id="CompanyForm" placeholder="Enter Company">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="EmailForm">Email Address</label>
+                            <input type="email" class="form-control" id="EmailForm" placeholder="Enter Address">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="PhoneForm">Phone Number</label>
+                            <input type="text" class="form-control" id="PhoneForm" placeholder="Enter Phone NUmber">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="MesageForm">Message</label>
+                        <textarea class="form-control" rows="8" id="MesageForm" placeholder="Enter Message"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-flat btn-lg"> Send</button>
+                    </form>
+                 
+                  </div>
+                </div>
+
+              </div>              	
+
+            <a id="backtotop" href="#">TOP</a>
+              <div class="bg-line"></div>
+            </section>       
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wait-page" class="text-center">Loading...</div>
+
+
+  
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src='http://yobithemes.com/wb/html/dcard/assets/js/pace.min.js'></script>
+    <script src="http://yobithemes.com/wb/html/dcard/bootstrap/js/bootstrap.js"></script>
+    <script src="http://yobithemes.com/wb/html/dcard/assets/js/jquery.autofix_anything.js"></script>
+    <script src="http://yobithemes.com/wb/html/dcard/assets/js/jquery.mixitup.min.js"></script>
+    <script src='http://yobithemes.com/wb/html/dcard/assets/js/jquery.magnific-popup.min.js'></script>
+    <script src="http://pankajas.github.io/js/App.js"></script>
+
+  </body>
 </html>
