@@ -139,14 +139,15 @@ function theme_option(selector) {
   return false;
 }
 
-$("body").on("contextmenu", "img", function(e) {
-  return false;
-});
 
 
 $(window).load(function() {
   $('.imgWrapper img').animate({opacity: '1.0'}, 1000, function() {
     $(this).css('filter', 'none');
   });
+  $("body").on("contextmenu", "img", function(e) {
+  return false;
+});
+
 });
 
