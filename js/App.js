@@ -144,10 +144,6 @@ function theme_option(selector) {
 $(window).load(function() {
   $('.imgWrapper img').animate({opacity: '1.0'}, 1000, function() {
     $(this).css('filter', 'none');
-  });
-  $("body").on("contextmenu", "img", function(e) {
-  return false;
-});
-
+  }); 
 });
 
