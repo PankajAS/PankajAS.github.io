@@ -10,6 +10,8 @@ $(document).ready(function() {
   init_modal_optional();
 });
 
+
+
 function init_modal_optional() {
   if ($('.ajax_link').length > 0) {
     $('.ajax_link').click(function(e) {
@@ -18,7 +20,7 @@ function init_modal_optional() {
       $('#modal').modal('show');
       return false;
     });
-  }
+  }  
 }
 
 function init_btn_love() {
@@ -137,6 +139,9 @@ function theme_option(selector) {
   return false;
 }
 
+$("body").on("contextmenu", "img", function(e) {
+  return false;
+});
 
 
 $(window).load(function() {
